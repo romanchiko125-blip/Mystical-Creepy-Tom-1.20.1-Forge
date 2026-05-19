@@ -1,3 +1,9 @@
+# Recreate objectives on reload to avoid duplicate-objective errors
+scoreboard objectives remove tom_cooldown
+scoreboard objectives remove tom_roll
+scoreboard objectives remove tom_loot_cd
+scoreboard objectives remove tom_peace_cd
+
 scoreboard objectives add tom_cooldown dummy
 scoreboard objectives add tom_roll dummy
 scoreboard objectives add tom_loot_cd dummy
