@@ -1,0 +1,11 @@
+# Reduce recurring GitHub merge conflicts for datapack content files
+# Keep both sides for markdown docs when possible
+*.md merge=union
+
+# Datapack function/json files are text and should use LF consistently
+*.mcfunction text eol=lf
+*.json text eol=lf
+
+# Prefer normal text merge with minimal noise
+*.mcfunction merge=text
+*.json merge=text
